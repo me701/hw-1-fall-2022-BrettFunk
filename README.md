@@ -52,6 +52,8 @@ To display CPU information, I used the following command:
 lscpu | less # It just works.
        #      code in Markdown!
 ```
+The first part of this command lists the cpu information. It is then piped into less, which allows me to read it.
+My cpu has 12 cores (6 hardware) and runs at 2592 MHz.
 
 ## Problem 4 -- Resource Hogs
 
