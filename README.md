@@ -27,11 +27,11 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
-version of Linux.  With WSL, you probably don't have as direct a path for
-exploring software in the Software Manager.  However, use the power of
-Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
+I frequently need to edit PDF files, especially in this era of online homework submissions. Most
+powerful tools, especially those which allow you to reorder the pages themselves, are very expensive.
+I found a package called pdf toolkit (pdftk-java) which allows splitting, combining, and reordering 
+pdf pages with relatively simple commands. I find the command line version to be perfectly adequate,
+but a GUI has been developed for it as well.
 
 
 ## Problem 3 -- Your CPU
@@ -49,7 +49,7 @@ using `ls > directory_contents.txt` to dump the contents of a directory to a fil
 To display CPU information, I used the following command:
 
 ```bash
-ls -al # <--- that's not right, but it shows you how to include
+lscpu | less # It just works.
        #      code in Markdown!
 ```
 
@@ -63,6 +63,11 @@ in your writeup.
 
 ### Solution
 
+```bash
+htop
+```
+This allows user to view currently running tasks. They can be sorted by the desired trait, including
+processing power or memory used, by pressing f6.
 
 
 ## Problem 5 -- `bash`
@@ -74,3 +79,12 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+
+```bash
+env | less
+```
+This shows where bash is located: /bin/bash
+```bash
+bash --version
+```
+This shows what version of bash I am using, which is 5.0.17(1)-release
